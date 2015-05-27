@@ -1,0 +1,87 @@
+html, body, h1, ul, li, a, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  text-decoration: inherit;
+  background: transparent;
+  font: inherit;
+  text-align: inherit;
+  color: inherit;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid {
+  margin: auto;
+  width: 280px;
+}
+
+.grid > li {
+  height: 90px;
+  width: 90px;
+  float: left;
+}
+
+.grid > .clickable:hover {
+  background-color: yellow;
+}
+
+.grid > li:nth-child(3n+2) {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.grid > li:nth-child(n+4) {
+  border-top: 5px solid black;
+}
+
+h1 {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+}
+
+.x:after {
+  content: "X";
+  display: block;
+  font-size: 84px;
+  text-align: center;
+}
+
+.o:after {
+  content: "O";
+  display: block;
+  font-size: 84px;
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.restart {
+  color: purple;
+  display: block;
+  width: 150px;
+  font-size: 24px;
+  border: 5px solid red;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
